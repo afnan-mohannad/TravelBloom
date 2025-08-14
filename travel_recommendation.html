@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Bloom</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="/travel_recommendation.html">
+            <div class="logo">
+                <i class="fas fa-plane fly"></i>
+                <span>Travel Bloom</span>
+            </div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+            <li><a href="./about.html" id="about">About Us</a></li>
+            <li><a href="./contact.html" id="contact">Contact Us</a></li>
+        </ul>
+        <div class="searchContainer">
+            <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+            <i class="fas fa fa-search search"></i>
+            <button id="btnSearch">Search</button>
+            <button id="btnReset">Reset</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="background-image"></div>
+
+        <div class="grid-container">
+            <div class="half-content content-left">
+                <h1>
+                    <span>EXPLORE</span>
+                    <span>DREAM</span>
+                    <span>DESTINATION</span>
+                </h1>
+                <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                <a href="#" class="btn-book">BOOK NOW</a>
+            </div>
+
+            <div class="half-content content-right">
+                <div id="results"></div>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
